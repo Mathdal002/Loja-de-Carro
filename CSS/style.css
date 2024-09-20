@@ -1,3 +1,52 @@
-h1 {
-    color: red;
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: bisque;
+}
+
+h1, h2, h3, h4, h5 {
+    color: dimgray;
+}
+
+p, label {
+    color:dimgrey;
+}
+
+input {
+    border: none;
+    border: 1px solid #ccc;
+    padding: 10px 0px;
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="date"], 
+input[type="file"] {
+    width: 400px;
+}
+
+/*  age header  */
+.header{
+    height: 160px;
+    padding: 20px;
+    background-color:blanchedalmond;
+}
+
+.header h3 {
+    color:brown;
+    margin-top: 0;
+}
+
+/*  form container  */
+.form-container {
+    background-color: azure;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -62px;
 }
