@@ -1,10 +1,11 @@
 /* Reset */
-body{
+body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -33,6 +34,7 @@ body{
     margin-top: 5px;
 }
 
+/* Estilo do botão de envio no formulário */
 input[type="submit"] {
     background-color: #007BFF;
     color: white;
@@ -47,15 +49,43 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+/* Estilo para os botões de rádio */
 .radio-container {
     display: flex;
     gap: 15px;
 }
 
+/* Layout responsivo */
 @media (min-width: 768px) {
     .form-body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+}
+
+/* Estilo do botão "Cadastrar Veículo" */
+.btn-cadastrar {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FF4D4D;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px; /* Arredondamento total */
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.btn-cadastrar:hover {
+    background-color: #e63946; /* Cor mais escura no hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumentar a sombra ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+.btn-cadastrar:active {
+    transform: translateY(0); /* Voltar ao normal ao clicar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra reduzida ao clicar */
 }
